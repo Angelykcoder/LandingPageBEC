@@ -15,6 +15,9 @@ function showToast(msg){
   clearTimeout(toastTimer);
   toastTimer = setTimeout(()=>toast.classList.remove("show"),2800);
 }
+function redirectToSimulator(){
+  window.location.assign("https://becsimulator.netlify.app/");
+}
 function openModal(type){
   if(type === "survey"){
     returnFocus = document.activeElement;
@@ -58,7 +61,7 @@ $("#loginForm").addEventListener("submit",(e)=>{
   const validDemo=email==="usuario@biteggcoin.gt"&&pass==="123456";
   const validSaved=saved&&saved.email===email&&saved.password===pass;
   if(validDemo || validSaved){
-    window.location.assign("https://becsimulator.netlify.app/");
+    redirectToSimulator();
   }else showToast("Credenciales incorrectas. Usa el acceso demo indicado.");
 });
 
@@ -71,8 +74,7 @@ $("#registerForm").addEventListener("submit",(e)=>{
 });
 
 $("#guestBtn").addEventListener("click",()=>{
-  $("#loginEmail").value="usuario@biteggcoin.gt"; $("#loginPassword").value="123456";
-  $("#loginForm").requestSubmit();
+  redirectToSimulator();
 });
 
 $("#surveyForm").addEventListener("submit",(e)=>{
