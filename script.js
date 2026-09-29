@@ -58,13 +58,7 @@ $("#loginForm").addEventListener("submit",(e)=>{
   const validDemo=email==="usuario@biteggcoin.gt"&&pass==="123456";
   const validSaved=saved&&saved.email===email&&saved.password===pass;
   if(validDemo || validSaved){
-    const name=validSaved?saved.name:"Usuario BitEggCoin";
-    $("#dashWelcome").textContent=`Hola, ${name.split(" ")[0]}.`;
-    closeModal("modal"); dash.classList.add("open"); dash.setAttribute("aria-hidden","false");
-    returnFocus=document.activeElement;
-    document.body.classList.add("modal-open");
-    dash.querySelector(".modal-close").focus();
-    showToast("Sesión iniciada en modo demostración.");
+    window.location.assign("https://becsimulator.netlify.app/");
   }else showToast("Credenciales incorrectas. Usa el acceso demo indicado.");
 });
 
