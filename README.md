@@ -1,37 +1,35 @@
-# BitEggCoin — Landing page
+# BitEggCoin
 
-Sitio web estático que presenta la propuesta académica BitEggCoin, un proyecto tecnológico y económico aplicado a la producción avícola en Guatemala. La información y las cifras de la página resumen el documento del proyecto y se muestran con fines ilustrativos.
+Landing page del prototipo académico BitEggCoin, una propuesta tecnológica y económica vinculada a la producción avícola en Guatemala. El sitio presenta el modelo, su operación, el escenario económico, el mercado, la plataforma propuesta, la organización y los riesgos del proyecto.
 
-## Estructura del proyecto
+## Contenido
 
-| Archivo | Función |
+| Archivo o carpeta | Descripción |
 | --- | --- |
-| `index.html` | Contenido y estructura de la landing page, navegación, secciones informativas, modales y panel demostrativo. |
-| `styles.css` | Identidad visual, diseño adaptable a distintos tamaños de pantalla, componentes, animaciones y estilos de los modales. |
-| `script.js` | Navegación e interacciones, registro e inicio de sesión demostrativos, encuesta y panel local. |
+| `index.html` | Estructura de la página, navegación, secciones informativas y formularios de demostración. |
+| `styles.css` | Diseño adaptable, componentes, animaciones y estilos de la página y sus ventanas. |
+| `script.js` | Navegación, ventanas, registro local, acceso al simulador externo y encuesta. |
 | `BitEggCoin_Version_Final.pdf` | Documento académico descargable que sirve como fuente del contenido. |
-| `Img/` | Carpeta con las ilustraciones `baron.png`, `familia.png`, `joven.png`, `lady.png`, `moneda.png` y `sir.png`. |
+| `Img/` | Ilustraciones utilizadas en la landing page. |
 
-## Información que presenta la página
+## Funcionalidad
 
-La página introduce el concepto de BitEggCoin y el alcance del prototipo; resume las etapas del proyecto y permite descargar el documento académico. También presenta un video, el flujo de producción avícola, cifras de operación y presupuesto, el mercado objetivo, la plataforma propuesta, la estructura de la empresa y sus riesgos productivos, económicos, tecnológicos y legales. Incluye una encuesta de experiencia y una vista demostrativa de un panel de usuario.
+- Navegación adaptable con menú móvil, enlaces a secciones y botón para volver al inicio.
+- Contenido del proyecto: etapas, video, operación avícola, mercado, presupuesto, tecnología, estructura empresarial y riesgos.
+- Descarga del documento PDF desde la sección de documentación.
+- Acceso al simulador publicado en `https://becsimulator.netlify.app/`. El botón para explorar, el acceso de demostración y el acceso como invitado llevan a ese sitio.
+- Formulario de registro demostrativo que guarda el nombre, correo y contraseña en el almacenamiento local del navegador. El inicio de sesión acepta la cuenta de demostración o la cuenta guardada en ese navegador y redirige al simulador.
+- Encuesta de experiencia que guarda sus respuestas localmente en el navegador.
 
-Las cifras económicas, productivas y de participación son escenarios académicos ilustrativos. El prototipo no procesa dinero, no opera con Bitcoin ni ofrece rendimientos. El registro, el acceso y la encuesta guardan datos localmente en el navegador; no existe autenticación ni almacenamiento conectado a un servidor.
+La landing page es estática y no tiene servidor, base de datos ni autenticación real. El registro y la encuesta son demostrativos; sus datos no se envían a ningún servicio. No uses información sensible ni contraseñas reutilizadas. El panel modal de ejemplo incluido en el HTML no forma parte del flujo activo de acceso.
 
-## Estado y trabajo pendiente
+## Ejecución
 
-La landing page y el panel demostrativo todavía funcionan como una experiencia local independiente. **Está pendiente conectar la landing page con el simulador**, integrar sus flujos y datos, y definir la comunicación necesaria para que la navegación y las funciones del sitio utilicen el simulador real.
-
-## Cómo abrir el proyecto
-
-1. Abre la carpeta `BitEggCoin_Web` en Visual Studio Code.
-2. Abre `index.html` en un navegador o utiliza una extensión como Live Server.
-3. El botón **Descargar documento PDF** descarga `BitEggCoin_Version_Final.pdf`, ubicado en la misma carpeta.
-4. El apartado **Repositorio SDLC** está creado; su botón quedará enlazado cuando se defina la URL del repositorio.
+Abre `index.html` directamente en un navegador o sirve esta carpeta con una extensión como Live Server. No se requiere instalar dependencias ni compilar el proyecto. Para descargar correctamente el documento, conserva `BitEggCoin_Version_Final.pdf` junto a `index.html`.
 
 ## Acceso de demostración
 
 - Correo: `usuario@biteggcoin.gt`
 - Contraseña: `123456`
 
-El acceso es únicamente demostrativo y no debe utilizarse para información real.
+Este acceso solo permite probar el flujo de la landing page y redirige al simulador. Los datos productivos, económicos y de participación que presenta el proyecto son ilustrativos: el prototipo no procesa dinero, no opera con Bitcoin ni ofrece rendimientos.
