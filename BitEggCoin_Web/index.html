@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explora el prototipo BitEggCoin: una propuesta digital vinculada a la producción avícola de Guatemala.">
+  <title>BitEggCoin | Simulación productiva avícola</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Volver al inicio" title="Volver al inicio" hidden>↑</button>
+
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="BitEggCoin inicio">
+      <span class="brand-mark">BE</span>
+      <span>BitEggCoin</span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-controls="mainNav" aria-expanded="false">☰</button>
+    <nav id="mainNav" aria-label="Navegación principal">
+      <a href="#inicio">Inicio</a>
+      <div class="nav-group">
+        <button class="nav-toggle" type="button" aria-expanded="false">Proyecto &amp; Operación <span aria-hidden="true">▾</span></button>
+        <div class="submenu">
+          <a href="#como-funciona">Cómo funciona</a>
+          <a href="#proyecto">Proyecto</a>
+          <a href="#video">Video</a>
+          <a href="#produccion">Operación</a>
+          <a href="#empresa">Empresa</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-toggle" type="button" aria-expanded="false">Análisis Económico <span aria-hidden="true">▾</span></button>
+        <div class="submenu">
+          <a href="#mercado">Mercado</a>
+          <a href="#economia">Economía</a>
+          <a href="#riesgos">Riesgos y legal</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-toggle" type="button" aria-expanded="false">Documentación <span aria-hidden="true">▾</span></button>
+        <div class="submenu">
+          <a href="#documento">Documento</a>
+          <a href="#tecnologia">Plataforma</a>
+        </div>
+      </div>
+      <button class="nav-login" data-open="login">Ingresar / Demo</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-wallpaper" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <span class="eyebrow">BitEggCoin · Prototipo académico · Guatemala</span>
+        <h1>Avicultura,<br><em>clara y digital.</em></h1>
+        <p>
+          Explora una propuesta que conecta producción de huevos, participación y seguimiento digital.
+          El prototipo permite recorrer el modelo y consultar datos demostrativos.
+        </p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" data-open="login">Explorar simulador</button>
+          <a class="btn btn-ghost" href="#como-funciona">Cómo funciona <span>↓</span></a>
+        </div>
+        <p class="notice"><strong>Modo demostración:</strong> no procesa dinero, no opera con Bitcoin y no garantiza rendimientos. Las cifras son ilustrativas.</p>
+      </div>
+      <div class="hero-visual" role="img" aria-label="Vista de demostración del panel de BitEggCoin">
+        <div class="preview-card">
+          <div class="preview-topline">
+            <span class="preview-brand"><span class="brand-mark">BE</span> BitEggCoin</span>
+            <span class="preview-status"><i></i> DEMO</span>
+          </div>
+          <div class="preview-heading">
+            <div><small>RESUMEN PRODUCTIVO</small><h2>Panel de simulación</h2></div>
+            <span class="preview-period">MENSUAL</span>
+          </div>
+          <div class="preview-metrics">
+            <div title="Cuota individual simulada dentro del lote general de 1,000 gallinas del proyecto"><small>ACTIVOS ASOCIADOS</small><strong>10</strong><span>gallinas · ilustrativo</span></div>
+            <div title="Cuota individual simulada dentro del lote general de 1,000 gallinas del proyecto"><small>PRODUCCIÓN</small><strong>≈ 250</strong><span>huevos/mes · demo</span></div>
+          </div>
+          <p class="scale-note">Cuota individual simulada dentro del lote general de 1,000 gallinas del proyecto.</p>
+          <div class="preview-chart" aria-hidden="true">
+            <i style="height:36%"></i><i style="height:52%"></i><i style="height:44%"></i><i style="height:72%"></i><i style="height:58%"></i><i style="height:86%"></i><i style="height:68%"></i><i style="height:94%"></i>
+          </div>
+          <div class="preview-foot"><span>Producción simulada</span><span>Datos ilustrativos</span></div>
+        </div>
+        <img class="character character-family" src="Img/familia.png" width="649" height="609" alt="" aria-hidden="true" fetchpriority="high">
+      </div>
+    </section>
+
+    <section class="section intro-grid" id="como-funciona">
+      <div>
+        <span class="section-tag">01 · CÓMO FUNCIONA</span>
+        <h2>Tres componentes.<br>Un mismo ecosistema.</h2>
+      </div>
+      <div>
+        <p class="lead">
+          BitEggCoin integra <strong>tecnología, actividad productiva avícola y participación económica</strong>.
+          El prototipo organiza la información del modelo para recorrer sus activos, producción y seguimiento;
+          no representa transacciones financieras reales.
+        </p>
+      </div>
+      <img class="character character-young" src="Img/joven.png" width="381" height="501" alt="" aria-hidden="true" loading="lazy">
+    </section>
+
+    <section class="cards-section">
+      <div class="feature-card">
+        <span class="number">01</span><div class="icon">◉</div>
+        <h3>Tecnología</h3>
+        <p>Plataforma web, registro de usuarios, autenticación, base de datos, respaldos y controles de acceso.</p>
+      </div>
+      <div class="feature-card featured">
+        <span class="number">02</span><div class="icon">🥚</div>
+        <h3>Producción avícola</h3>
+        <p>Gallinas ponedoras como activos productivos, producción, clasificación, almacenamiento y comercialización de huevos.</p>
+      </div>
+      <div class="feature-card">
+        <span class="number">03</span><div class="icon">↗</div>
+        <h3>Participación</h3>
+        <p>Registro y seguimiento digital de la información relacionada con la participación dentro del modelo.</p>
+      </div>
+      <img class="coin-detail" src="Img/moneda.png" width="423" height="460" alt="" aria-hidden="true" loading="lazy">
+    </section>
+
+    <section class="dark-section" id="proyecto">
+      <div class="section-heading">
+        <span class="section-tag light">02 · EL PROYECTO</span>
+        <h2>De la idea al<br><em>prototipo.</em></h2>
+        <p>El documento plantea una propuesta tecnológica y económica aplicada al sector avícola de Guatemala.</p>
+      </div>
+      <div class="timeline">
+        <div><span>01</span><h3>Iniciación</h3><p>Problema, propuesta, alcance, objetivos y justificación.</p></div>
+        <div><span>02</span><h3>Planificación</h3><p>Cronograma, presupuesto, recursos, riesgos y base legal.</p></div>
+        <div><span>03</span><h3>Empresa</h3><p>Estructura, administración, departamentos, cultura y políticas.</p></div>
+        <div><span>04</span><h3>Mercado</h3><p>Análisis situacional, objetivos, estrategias, tácticas y medición.</p></div>
+        <div><span>05</span><h3>Estudio técnico</h3><p>Ingeniería, operación, tecnología, instalaciones y ubicación.</p></div>
+        <div><span>06</span><h3>Producto</h3><p>Idea, definición, prototipo, diseño, validación y comercialización.</p></div>
+        <div><span>07</span><h3>Ejecución</h3><p>Implementación, actividades, tareas, cronograma y viabilidad.</p></div>
+        <div><span>08</span><h3>Seguimiento</h3><p>Monitoreo, desviaciones y acciones correctivas.</p></div>
+        <div><span>09</span><h3>Cierre</h3><p>Resultados, objetivos, lecciones aprendidas y recomendaciones.</p></div>
+      </div>
+      <img class="character character-sir" src="Img/sir.png" width="406" height="449" alt="" aria-hidden="true" loading="lazy">
+    </section>
+
+    <section class="section" id="documento">
+      <div class="download-card">
+        <div>
+          <span class="section-tag">03 · DOCUMENTACIÓN</span>
+          <h2>Consulta el proyecto completo.</h2>
+          <p>Descarga la versión final del documento utilizado como base de esta plataforma.</p>
+        </div>
+        <a class="btn btn-primary" href="BitEggCoin_Version_Final.pdf" download>Descargar documento PDF <span>↓</span></a>
+      </div>
+      <div class="download-card" style="margin-top: 24px;">
+        <div>
+          <span class="section-tag">REPOSITORIO</span>
+          <h2>Repositorio SDLC.</h2>
+          <p>Consulta el repositorio del ciclo de vida de desarrollo de software del proyecto.</p>
+        </div>
+        <span class="btn btn-primary" aria-label="El enlace del repositorio SDLC está pendiente">Enlace pendiente</span>
+      </div>
+    </section>
+
+    <section class="section video-section" id="video">
+      <div class="section-heading centered">
+        <span class="section-tag">VIDEO DEL PROYECTO</span>
+        <h2>Conoce BitEggCoin.</h2>
+      </div>
+
+      <div class="video-wrap">
+        <iframe width="720" height="405" src="https://www.youtube.com/embed/LGWUmNnZ7WY?si=ozr_F7QbjcZMoz5Z" title="Video del proyecto BitEggCoin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section class="section" id="produccion">
+      <div class="section-heading centered">
+        <span class="section-tag">04 · OPERACIÓN</span>
+        <h2>Del ave al dato.</h2>
+        <p>Flujo productivo planteado para la operación simulada.</p>
+      </div>
+      <div class="process">
+        <div class="process-item"><b>01</b><span>Gallinas</span><small>Recepción e incorporación</small></div>
+        <div class="arrow">→</div>
+        <div class="process-item"><b>02</b><span>Cuidado</span><small>Alimento + agua + supervisión</small></div>
+        <div class="arrow">→</div>
+        <div class="process-item"><b>03</b><span>Producción</span><small>Producción y recolección</small></div>
+        <div class="arrow">→</div>
+        <div class="process-item"><b>04</b><span>Control</span><small>Revisión y clasificación</small></div>
+        <div class="arrow">→</div>
+        <div class="process-item"><b>05</b><span>Registro</span><small>Datos de producción</small></div>
+        <div class="arrow">→</div>
+        <div class="process-item"><b>06</b><span>Venta</span><small>Distribución y comercialización</small></div>
+      </div>
+
+      <div class="numbers">
+        <div><strong>1,000</strong><span>gallinas simuladas</span></div>
+        <div><strong>75</strong><span>quintales de alimento / mes</span></div>
+        <div><strong>Q43,500.00</strong><span>operación mensual estimada</span></div>
+        <div><strong>Q270,430.00</strong><span>requerimiento inicial estimado</span></div>
+      </div>
+    </section>
+
+    <section class="section alt" id="mercado">
+      <div class="two-col">
+        <div>
+          <span class="section-tag">05 · MERCADO</span>
+          <h2>Una propuesta para el contexto guatemalteco.</h2>
+          <p>
+            El mercado objetivo propuesto se concentra inicialmente en personas adultas residentes en Guatemala,
+            con acceso a Internet, familiaridad con servicios digitales y capacidad económica para participar
+            en el modelo. Esta segmentación deberá validarse mediante investigación directa.
+          </p>
+          <div class="chips">
+            <span>Guatemala</span><span>Adultos</span><span>Digital</span><span>Innovación</span><span>Producción</span>
+          </div>
+        </div>
+        <div class="market-panel">
+          <div class="mini-stat"><span>Consumo de huevo</span><strong>≈292</strong><small>unidades anuales por habitante · dato citado en el documento</small></div>
+          <div class="mini-stat"><span>Precio de referencia</span><strong>Q16.50</strong><small>docena de huevo blanco grande · marzo 2026</small></div>
+          <div class="mini-stat"><span>Validación propuesta</span><strong>20+</strong><small>usuarios potenciales en pruebas</small></div>
+          <div class="mini-stat"><span>Comprensión objetivo</span><strong>80%</strong><small>de usuarios evaluados</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="economia">
+      <div class="section-heading centered">
+        <span class="section-tag">06 · ESCENARIO ECONÓMICO</span>
+        <h2>Recursos y presupuesto.</h2>
+        <p>Valores del escenario académico; no constituyen cotizaciones comerciales vigentes.</p>
+      </div>
+      <div class="budget-grid">
+        <div class="budget-card">
+          <span>Inversión inicial</span><strong>Q206,300.00</strong>
+          <ul>
+            <li>Gallinas ponedoras: Q68,000.00</li>
+            <li>Instalaciones: Q60,000.00</li>
+            <li>Equipamiento avícola: Q36,800.00</li>
+            <li>Equipo de cómputo: Q9,000.00</li>
+            <li>Desarrollo inicial: Q15,000.00</li>
+            <li>Otros recursos: Q17,500.00</li>
+          </ul>
+        </div>
+        <div class="budget-card dark-card">
+          <span>Operación mensual</span><strong>Q43,500.00</strong>
+          <ul>
+            <li>Alimento concentrado: Q19,500.00</li>
+            <li>Personal operativo: Q8,000.00</li>
+            <li>Administración: Q5,000.00</li>
+            <li>Servicios básicos: Q2,500.00</li>
+            <li>Hosting y tecnología: Q1,000.00</li>
+            <li>Otros costos: Q7,500.00</li>
+          </ul>
+        </div>
+        <div class="budget-card">
+          <span>Requerimiento inicial</span><strong>Q270,430.00</strong>
+          <ul>
+            <li>Inversión inicial: Q206,300.00</li>
+            <li>Contingencia 10%: Q20,630.00</li>
+            <li>Primer mes: Q43,500.00</li>
+          </ul>
+        </div>
+      </div>
+      <aside class="callout" role="note">
+        <strong>Nota de viabilidad microeconómica</strong>
+        <p>El proyecto se encuentra en etapa de validación de costos fijos frente a costos variables y de cálculo del punto de equilibrio. Las cifras aquí mostradas son un escenario académico y aún no demuestran sostenibilidad financiera.</p>
+      </aside>
+      <img class="character character-lady" src="Img/lady.png" width="401" height="508" alt="" aria-hidden="true" loading="lazy">
+      <p class="small-note">El documento señala que el escenario económico no demuestra todavía sostenibilidad financiera basada únicamente en la comercialización de huevos; antes de una implementación real deberán revisarse costos, productividad, comercialización y condiciones legales.</p>
+    </section>
+
+    <section class="dark-section" id="tecnologia">
+      <div class="two-col tech-layout">
+        <div>
+          <span class="section-tag light">07 · PLATAFORMA</span>
+          <h2>Todo lo necesario,<br><em>en un solo lugar.</em></h2>
+          <p>El prototipo contempla una separación entre funciones públicas y privadas, buscando claridad, facilidad de uso, seguridad y transparencia.</p>
+          <button class="btn btn-light" data-open="login">Probar prototipo</button>
+        </div>
+        <div class="platform-list">
+          <div><span>01</span><b>Inicio</b><small>Concepto y funcionamiento general</small></div>
+          <div><span>02</span><b>Registro</b><small>Creación de cuenta mediante datos básicos</small></div>
+          <div><span>03</span><b>Inicio de sesión</b><small>Acceso al área privada</small></div>
+          <div><span>04</span><b>Panel de usuario</b><small>Participación, activos, producción e historial</small></div>
+          <div><span>05</span><b>Panel administrativo</b><small>Usuarios, producción, huevos, ventas y sistema</small></div>
+          <div><span>06</span><b>Contacto</b><small>Información general y medios de comunicación</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="empresa">
+      <div class="two-col">
+        <div>
+          <span class="section-tag">08 · EMPRESA</span>
+          <h2>Una estructura pequeña y funcional.</h2>
+          <p>Para la etapa inicial se proponen tres empleados permanentes y servicios profesionales externos según las necesidades.</p>
+          <div class="people">
+            <div><strong>01</strong><span>Administrador General</span></div>
+            <div><strong>02</strong><span>Operarios avícolas</span></div>
+            <div><strong>+1</strong><span>Tecnología externa</span></div>
+            <div><strong>+1</strong><span>Contabilidad externa</span></div>
+            <div><strong>+1</strong><span>Marketing externo</span></div>
+          </div>
+        </div>
+        <div class="org-chart">
+          <div class="org-main">Administrador General</div>
+          <div class="org-line"></div>
+          <div class="org-grid">
+            <span>Operaciones<br>avícolas</span><span>Tecnología</span><span>Finanzas y<br>contabilidad</span><span>Marketing y<br>comercialización</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="riesgos">
+      <div class="two-col">
+        <div>
+          <span class="section-tag">09 · RIESGOS Y LEGAL</span>
+          <h2>Transparencia antes de crecer.</h2>
+          <p>El proyecto identifica riesgos productivos, económicos, financieros, tecnológicos, de ciberseguridad, operativos, comerciales, legales, reputacionales, ambientales y logísticos.</p>
+        </div>
+        <div class="risk-grid">
+          <div><b>Productivo</b><span>Enfermedades · producción</span></div>
+          <div><b>Económico</b><span>Alimento · precios</span></div>
+          <div><b>Tecnológico</b><span>Fallos · información</span></div>
+          <div><b>Legal</b><span>Regulación · participación</span></div>
+          <div><b>Comercial</b><span>Aceptación inicial</span></div>
+          <div><b>Reputacional</b><span>Confianza · transparencia</span></div>
+        </div>
+      </div>
+      <div class="legal-box">
+        <strong>Nota legal del proyecto</strong>
+        <p>La documentación indica que el término “participación” se mantiene sin clasificarla como acción, valor, criptomoneda, token de inversión u otro instrumento financiero hasta contar con un análisis jurídico. Una implementación comercial requeriría asesoría jurídica especializada antes de recibir recursos de terceros o distribuir rendimientos.</p>
+      </div>
+      <img class="character character-baron" src="Img/baron.png" width="388" height="526" alt="" aria-hidden="true" loading="lazy">
+    </section>
+
+    <section class="section closing-section">
+      <div class="closing">
+        <span class="section-tag">CONCLUSIÓN</span>
+        <h2>BitEggCoin continúa como una propuesta tecnológica, empresarial y académica.</h2>
+        <p>
+          El documento concluye que el proyecto presenta condiciones para continuar como propuesta y prototipo,
+          pero requiere más desarrollo, validación de mercado, análisis financiero actualizado y revisión jurídica
+          antes de una implementación comercial.
+        </p>
+      </div>
+    </section>
+
+    <section class="survey-banner" id="encuesta">
+      <div>
+        <h2>¿Qué te pareció el prototipo?</h2>
+        <p>Tu opinión nos ayuda a validar que al menos el 80% de los 20 usuarios evaluados comprenda el modelo.</p>
+      </div>
+      <button class="btn btn-primary" type="button" data-open="survey">Evaluar la experiencia del prototipo</button>
+    </section>
+  </main>
+
+  <footer>
+    <div><span class="brand-mark">BE</span><strong>BitEggCoin</strong></div>
+    <p>Proyecto tecnológico y económico aplicado al sector avícola de Guatemala.</p>
+    <small>Universidad Mariano Gálvez de Guatemala · Ingeniería en Sistemas · Microeconomía · 2026</small>
+    <div class="footer-credits">
+      <p><strong>Estudiantes:</strong> Wesley Alonzo, Luis Sánchez, Diego Flores, Leandro Pérez.</p>
+      <p><strong>Cátedra:</strong> Microeconomía 2026, Universidad Mariano Gálvez (UMG).</p>
+      <p><strong>Docente:</strong> Lic. Raúl Bonilla Berganza.</p>
+    </div>
+  </footer>
+
+  <div class="modal" id="authModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="loginTitle">
+    <div class="modal-backdrop" data-close="modal"></div>
+    <div class="modal-card">
+      <button class="modal-close" type="button" data-close="modal" aria-label="Cerrar ventana">×</button>
+      <div class="auth-brand"><span class="brand-mark">BE</span> BitEggCoin</div>
+      <div id="loginView">
+        <span class="section-tag">ÁREA PRIVADA</span>
+        <h2 id="loginTitle">Bienvenido.</h2>
+        <p>Ingresa al panel demostrativo del prototipo.</p>
+        <form id="loginForm">
+          <label>Correo<input id="loginEmail" type="email" required placeholder="usuario@ejemplo.com"></label>
+          <label>Contraseña<input id="loginPassword" type="password" required placeholder="••••••••"></label>
+          <button class="btn btn-primary full" type="submit">Ingresar</button>
+        </form>
+        <p class="form-switch">¿No tienes cuenta? <button type="button" id="showRegister">Crear cuenta</button></p>
+        <button class="btn btn-ghost btn-guest full" type="button" id="guestBtn">Probar como invitado</button>
+        <div class="demo-hint">Demo: usuario@biteggcoin.gt / 123456</div>
+      </div>
+      <div id="registerView" hidden>
+        <span class="section-tag">NUEVO USUARIO</span>
+        <h2 id="registerTitle">Crea tu cuenta.</h2>
+        <p>Registro local demostrativo para el prototipo.</p>
+        <form id="registerForm">
+          <label>Nombre<input id="regName" required placeholder="Tu nombre"></label>
+          <label>Correo<input id="regEmail" type="email" required placeholder="tu@correo.com"></label>
+          <label>Contraseña<input id="regPassword" type="password" minlength="6" required placeholder="Mínimo 6 caracteres"></label>
+          <button class="btn btn-primary full" type="submit">Registrarme</button>
+        </form>
+        <p class="form-switch">¿Ya tienes cuenta? <button type="button" id="showLogin">Ingresar</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="surveyModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="surveyTitle">
+    <div class="modal-backdrop" data-close="survey"></div>
+    <div class="modal-card">
+      <button class="modal-close" type="button" data-close="survey" aria-label="Cerrar ventana">×</button>
+      <span class="section-tag">RETROALIMENTACIÓN</span>
+      <h2 id="surveyTitle">Evalúa el prototipo.</h2>
+      <p>Tus respuestas se guardan solo en este navegador.</p>
+      <form id="surveyForm">
+        <label>¿Qué tan claro te resultó el modelo? (1 = nada, 5 = muy claro)
+          <input id="surveyScore" type="number" min="1" max="5" step="1" required placeholder="1 a 5">
+        </label>
+        <label>Comentarios
+          <input id="surveyComment" type="text" maxlength="300" placeholder="Opcional">
+        </label>
+        <button class="btn btn-primary full" type="submit">Enviar evaluación</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal dashboard-modal" id="dashboardModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="dashWelcome">
+    <div class="modal-backdrop" data-close="dashboard"></div>
+    <div class="dashboard-card">
+      <button class="modal-close" type="button" data-close="dashboard" aria-label="Cerrar ventana">×</button>
+      <div class="dash-head"><div><span class="section-tag">PANEL DEL USUARIO · DEMO</span><h2 id="dashWelcome">Hola.</h2></div><button class="btn btn-ghost" id="logoutBtn">Cerrar sesión</button></div>
+      <div class="dash-grid">
+        <div class="dash-stat"><small>ID PARTICIPACIÓN</small><strong>DEMO-001</strong><span>Datos ilustrativos</span></div>
+        <div class="dash-stat" title="Cuota individual simulada dentro del lote general de 1,000 gallinas del proyecto"><small>ACTIVOS ASOCIADOS</small><strong>10</strong><span>Gallinas · ilustrativo</span></div>
+        <div class="dash-stat" title="Cuota individual simulada dentro del lote general de 1,000 gallinas del proyecto"><small>PRODUCCIÓN</small><strong>≈ 250</strong><span>Huevos/mes · demo</span></div>
+        <div class="dash-stat"><small>ESTADO</small><strong class="status">ACTIVO</strong><span>Simulación académica</span></div>
+      </div>
+      <p class="scale-note">Cuota individual simulada dentro del lote general de 1,000 gallinas del proyecto.</p>
+      <div class="dash-content">
+        <div><h3>Producción reciente</h3><div class="fake-chart"><i style="height:35%"></i><i style="height:52%"></i><i style="height:42%"></i><i style="height:70%"></i><i style="height:58%"></i><i style="height:82%"></i><i style="height:66%"></i></div></div>
+        <div><h3>Historial</h3><ul class="history"><li><span>Registro actualizado</span><b>Hoy</b></li><li><span>Producción registrada</span><b>+245</b></li><li><span>Participación consultada</span><b>12 Sep</b></li></ul></div>
+      </div>
+      <p class="dashboard-note">Los datos de este panel son ilustrativos, tal como establece el documento del proyecto. No representan una inversión, producción ni rendimiento real.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
